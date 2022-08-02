@@ -23,21 +23,21 @@ class Peoplefavoritos(Base):
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     UserId = Column(Integer, ForeignKey('User.UserId'), primary_key=True, )
-    PeopleId = Column(String(250), nullable=False)
+    PeopleId = Column(String(250), primary_key=True)
 
 class Planetfavoritos(Base):
     __tablename__ = 'Planetfavoritos'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     UserId = Column(Integer, ForeignKey('User.UserId'), primary_key=True, )
-    PlanetId = Column(String(250), nullable=False)
+    PlanetId = Column(String(250), primary_key=True)
 
 class Vehiclesfavoritos(Base):
     __tablename__ = 'Vehiclesfavoritos'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     UserId = Column(Integer, ForeignKey('User.UserId'), primary_key=True, )
-    VehiclesId = Column(String(250), nullable=False)
+    VehiclesId = Column(String(250), primary_key=True)
 
 class People(Base):
     __tablename__ = 'People'
